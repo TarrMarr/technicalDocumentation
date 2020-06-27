@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Documentation - JavaScript Basics</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        JavaScript Basics
+      </header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#what_it_does">What it does</a></li>
+        <li><a class="nav-link" href="#where_to">Where to</a></li>
+        <li><a class="nav-link" href="#data_types">Data Types</a></li>
+        <li><a class="nav-link" href="#comments">Comments</a></li>
+        <li><a class="nav-link" href="#references">References</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <h1>JavaScript Basics</h1>
+      <br>
+      <section id="introduction" class="main-section">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <ul>
+          <li>JavaScript is the programming language for the web</li>
+          <li>JavaScript can update and change both HTML and CSS</li>
+          <li>JavaScript can calculate, manipulate and validate data</li>
+        </ul>
+        <p>During the formative years of the world wide web, web pages could only be static and lacked any dynamic capabilities.  In 1995, the browser Netscape introduced JavaScript as a solution to this problem.</p>
+        <p>These days, JavaScript is the dominant client-side scripting language of the web with 95% of websites using it.</p>
+      </section>
+      <section id="what_it_does" class="main-section">
+        <header>
+          <h2>What it does</h2>
+        </header>
+        <p>The following are some examples of what JavaScript can do;</p>
+        <ul>
+          <li>Load new page content without refreshing the page</li>
+          <li>Animate page contents such as fading, resizing, moving, etc.</li>
+          <li>Add interactive content like games or videos</li>
+          <li>Transmit information regarding the user's behaviour for ad tracking, personalization and analytics</li>
+          <li>Validate inputs from a web form to ensure correctness before submitting to the server</li>
+        </ul>
+      </section>
+      <section id="where_to" class="main-section">
+        <header>
+          <h2>Where to</h2>
+        </header>
+        <p>In HTML, JavaScript code can be written directly into HTML generally before the closing <code>body</code> tag using a <code>style</code> tag;</p>
+        <p>eg. <code>&lt;style&gt; enter your JavaScript code here &lt;/style&gt;</code></p>
+        <p>The preferred method is to link a separate JavaScript page using a <code>script</code> tag to keep your HTML page clean.</p>
+        <p>eg. <code>&lt;script src="scripts/main.js"&gt;&lt;/script&gt;</code></p>
+        <p>Either of these options are generally entereed before the closing <code>body</code> tag to ensure all HTML is loaded prior to running any JavaScript.</p>
+      </section>
+      <section id="data_types" class="main-section">
+        <header>
+          <h2>Data Types</h2>
+        </header>
+        <p>In JavaScript, the concept of data types is an important one.  To be able to operate on variables and create strings successfully, we must be able to understand the type of data we need. The following four data types are considered <strong>Primitive Data</strong>;</p>
+        <h3>Strings</h3>
+          <p>A string (or a text string) is a series of characters like "John Doe".  Strings are written with single or double quotes.</p>
+        <h3>Numbers</h3>
+          <p>A number is represented without quotes and contain only number values.  They can be written with or without decimal points.</p>
+        <h3>Booleans</h3>
+          <p>Boolean values can only represent two things; <code>true</code> or <code>false</code>.</p>
+        <h3>Undefined</h3>
+        <p>In JavaScript, a variable without a value has the value and type of <code>undefined</code>.  Any variable can be emptied using the value and type <code>undefined</code></p>
+      </section>
+      <section id="comments" class="main-section">
+        <header>
+          <h2>Comments</h2>
+        </header>
+        <p>JavaScript comments can be used to explain code and make things more readable.  Comments can also be used to prevent execution when testing alternate code.</p>
+        <h3>Single Line Comments</h3>
+        <p>Single line comments start with <code>//</code>. Anything entered between <code>//</code> and the end of the line will not be executed.</p>
+        <p class="comments">eg. <code>//</code>anything after this will be greyed out</p>
+        <h3>Multi-line Comments</h3>
+        <p>All multi-line comments start with <code>/*</code> and end with <code>*/</code>.  Any text placed between the two will be ignored.</p>
+        <p class="comments">eg. <code>/*</code>All of this text is purely comment only and can span multiple lines of code <code>*/</code></p>
+      </section>
+      <section id="references" class="main-section">
+        <header>
+          <h2>References</h2>
+        </header>
+        <p>For more information, check out these links:</p>
+        <ul>
+          <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">w3schools.com</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">Wikipedia</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN webdocs Mozilla</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
+<!--
+User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
+done
+User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5.
+done
+User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section.
+done
+User Story #4: Each section element with the cHelperlass of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
+done
+User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
+done
+User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
+done
+User Story #7: The .main-section elements should contain at least 5 li items total (not each).
+done
+User Story #8: I can see a nav element with a corresponding id="navbar".
+done
+User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation.
+done
+User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section.
+done
+User Story #11: The header element in the navbar must come before any link (a) elements in the navbar.
+done
+User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
+done
+User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
+done
+User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+done
+User Story #15: My Technical Documentation page should use at least one media query.
+-->
